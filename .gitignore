@@ -1,1 +1,6 @@
+# These are the dependencies. 
+# You dont want to carry them around. 
 node_modules
+
+# Some apple specific stuff. 
+.DS_Store
