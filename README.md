@@ -68,6 +68,42 @@ kaunjovi@devbook learn-react-2021 % npm run start
 ```
 
 
+- Add a few more dependencies. 
+- Add a webpack.config.js 
+- Use html webpack plugin to pull together your index html in the bundle. 
+
+
+```
+npm install --save-dev webpack webpack-cli html-webpack-plugin webpack-dev-server
+```
+
+```javascript
+var path = require('path');
+
+var HtmlWebpackPlugin =  require('html-webpack-plugin');
+
+module.exports = {
+
+    mode:'development',
+
+    plugins : [
+
+        new HtmlWebpackPlugin ({
+
+            template : 'app/index.html'
+
+        })
+
+    ]
+
+}
+```
+```
+npm run start 
+```
+
+
+
 
 ## Webpack, module bundler 
 
