@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/kaunjovi/learn-react-2021/issues"
   },
-  "homepage": "https://github.com/kaunjovi/learn-react-2021#readme"
+  "homepage": "https://github.com/kaunjovi/learn-react-2021#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }

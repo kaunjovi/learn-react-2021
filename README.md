@@ -19,6 +19,21 @@ This utility will walk you through creating a package.json file.
 ... 
 ```
 
+## use npm to add react dependencies. 
+
+```
+kaunjovi@devbook learn-react-2021 % npm install react react-dom
+added 6 packages, and audited 7 packages in 2s
+found 0 vulnerabilities
+```
+
+- It was fairly fast. Did not really miss yarn for this. 
+- The node_modules folder is added in the project folder. 
+- It contains 6 folders. And another one .bin. So 7 in total. 
+- You dont want them in the version control system. 
+- So, add .gitignore. And use that to ignore node_modules folder. 
+- There is also a package-lock.json. You want that in the git. 
+ 
 
 
 ## Resources 
