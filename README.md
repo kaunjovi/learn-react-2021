@@ -33,7 +33,55 @@ found 0 vulnerabilities
 - You dont want them in the version control system. 
 - So, add .gitignore. And use that to ignore node_modules folder. 
 - There is also a package-lock.json. You want that in the git. 
- 
+
+
+## Start serving a basic hello world html
+
+- add a hello world html file
+- add webpack to start serving the webpage
+- add a "start" action to package.json and have webpack serve the page. 
+- Call that start action and your browser should open up with your index.html
+
+```
+npm install --save-dev webpack
+```
+
+```
+"scripts": {
+
+    "start": "webpack serve --open"
+
+  }
+```
+
+```
+kaunjovi@devbook learn-react-2021 % npm run start 
+
+> learn-react-2021@1.0.0 start
+> webpack serve --open
+
+ℹ ｢wds｣: Project is running at http://localhost:8080/
+ℹ ｢wds｣: webpack output is served from /
+... 
+... lines omitted for brevity. 
+... 
+```
+
+
+
+## Webpack, module bundler 
+
+bundling JavaScript files for usage in a browser. 
+Though it is also capable of transforming, bundling, or packaging just about any resource or asset.
+
+Configuration
+
+
+Check the steps below for webpack configuration-
+
+touch webpack.config.js
+
+Step 1- Add below snippet in this file
 
 
 ## Resources 
