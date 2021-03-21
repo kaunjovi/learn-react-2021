@@ -102,6 +102,56 @@ module.exports = {
 npm run start 
 ```
 
+## introducing REACT 
+
+- npm install react and react dom 
+- create a js file with react code
+- change the html to have an id that will act as a hook for the REACT component. 
+- the js file has some JSX code. 
+- You need bable for that. npm install it
+- the /dist folder will be created. you dont want it in git. Update .gitignore. 
+
+
+
+```
+npm install react react-dom
+```
+
+```javascript 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class HelloWorldApp extends React.Component{
+    render(){
+        return ( 
+            <div>Hello world </div>
+            )
+    }
+}
+
+ReactDOM.render( <HelloWorldApp/> , document.getElementById('helloWorld'))
+```
+
+```html 
+<html> 
+    <head>
+        <title> Hello world from React</title>
+    </head>
+    <body>
+        <div id="helloWorld"></div>
+        <br/>
+        Trying to stand it up by hand and not use create-react-app. 
+
+    </body>
+</html>
+```
+
+```
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
+```
+
+
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
 
 
 
